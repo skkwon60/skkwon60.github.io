@@ -1,22 +1,18 @@
----
-layout: compress
----
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html>
 
   {% include head.html %}
 
   <body>
-    <div id="shadow"></div>
-
-      {% include header.html %}
-      {% include aside.html %}
-
-    <main class="content-wrapper">
-      {{ content }}
-    </main>
-
-    {% include footer.html %}
-
+	
+	<div class="main-wrapper">
+		{% include header.html %}
+		{% include banner.html %}
+		{% include about.html %}
+		{% include blog.html %}
+		{% include projects.html %}
+		{% include footer.html %}
+	</div>
+	
   </body>
 </html>
